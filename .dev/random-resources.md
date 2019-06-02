@@ -1,3 +1,5 @@
  - https://github.com/golang/go/wiki/Modules
  - https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transaction-apis.html
  - https://aws.amazon.com/blogs/aws/new-amazon-dynamodb-transactions/
+ - [Amazon DynamoDB Examples Using the AWS SDK for Go](https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/using-dynamodb-with-go-sdk.html)
+ - [Getting Started with the AWS SDK for Go](https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/setting-up.html)
