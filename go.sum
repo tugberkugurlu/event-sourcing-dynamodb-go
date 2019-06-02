@@ -4,4 +4,5 @@ github.com/jetbasrawi/go.cqrs v0.0.0-20190206233932-e4d812d57f09 h1:3WtkKcUoF4ls
 github.com/jetbasrawi/go.cqrs v0.0.0-20190206233932-e4d812d57f09/go.mod h1:kAwo/aeGRFkDFPkjHm1GMi3Klcc3PXqBRAMQOPUO6L0=
 github.com/jetbasrawi/go.geteventstore v1.0.0 h1:eRICKjH59qET0lQG5pOPllWgLiOLdeLOaOR78Y3iM6c=
 github.com/jetbasrawi/go.geteventstore v1.0.0/go.mod h1:lEkGcCQHpZLkhgu7OEMyNnl65l7K9NoaOeQljpTRaek=
+github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af h1:pmfjZENx5imkbgOkpRUYLnmbU7UEFbjtDA2hxJ1ichM=
 github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af/go.mod h1:Nht3zPeWKUH0NzdCt2Blrr5ys8VGpn0CEB0cQHVjt7k=
