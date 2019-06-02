@@ -1,0 +1,3 @@
+ - https://github.com/golang/go/wiki/Modules
+ - https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transaction-apis.html
+ - https://aws.amazon.com/blogs/aws/new-amazon-dynamodb-transactions/
