@@ -13,6 +13,8 @@ const tableName = "esdynamodb-events"
 func EnsureInitialized(sess *session.Session, cfg *aws.Config) error {
 	svc := dynamodb.New(sess, cfg)
 	input := &dynamodb.CreateTableInput{
+		// When you use non-key attribute in at "AttributeDefinitions", you must use it as index, otherwise it's against the way of dynamodb to work. see http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.JsShell.06.html
+		// So no need to put non-key attribute in "AttributeDefinitions" if you're not gonna use it as index or primary key.
 		AttributeDefinitions: []*dynamodb.AttributeDefinition{
 			{
 				AttributeName: aws.String("StreamID"),
@@ -25,18 +27,6 @@ func EnsureInitialized(sess *session.Session, cfg *aws.Config) error {
 			{
 				AttributeName: aws.String("UNIXNanoTimestamp"),
 				AttributeType: aws.String("N"),
-			},
-			{
-				AttributeName: aws.String("EventName"),
-				AttributeType: aws.String("S"),
-			},
-			{
-				AttributeName: aws.String("EventJsonMetadata"),
-				AttributeType: aws.String("B"),
-			},
-			{
-				AttributeName: aws.String("EventJsonContent"),
-				AttributeType: aws.String("B"),
 			},
 		},
 		KeySchema: []*dynamodb.KeySchemaElement{
