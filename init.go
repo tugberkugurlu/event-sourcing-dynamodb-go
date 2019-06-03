@@ -6,7 +6,7 @@ import (
     "github.com/aws/aws-sdk-go/service/dynamodb"
 )
 
-const tableName = "esdynamodb-events"
+const tableName = "esdynamodb_events"
 
 // EnsureInitialized ensures that the DynamoDB table is created
 // for the given AWS session.
